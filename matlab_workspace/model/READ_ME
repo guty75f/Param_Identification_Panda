@@ -1,0 +1,41 @@
+This package is made from Bisogni Riccardo and Gabriele Gatti, students of Politecnico di Milano for their thesis' project
+
+funzioni .m:
+- calcolo_C: la funzione calcola la matrice di coriolis C (non semplificata) e il vettore Cq=C*dq semplificato
+
+-calcolo_Inerzia1: funzione che calcola la matrice di inerzia non approssimata
+
+-calcolo_pos_z.m: calcola la posizione e il vettore z in modo iterativo a partire dalla matrice T
+
+-calcolo_regr_e_PI_reverse: crea il regressore e i PI per il calcolo con reverse_eng.
+
+-calcolo_Trasformation_matrix: ritorna la trasformazione omogenea tra il giunto i e la terna 0;
+
+- calcoloCoppiaGrav1: calcola il vettore di gravità G e quello semplificato G2
+
+-calculus_J: calcola il jacobiano 
+
+-calculus_J_old: calcola il jacobiano; funzione vecchia usata solo per DH=0 e non ottimizzata
+
+-delete_zero: cancella gli zeri dei regressori e dei suoi parametri PI ( tau=Y*PI)
+
+-funzione lineartomatrixl: funzione che trasforma il vettore dei valori della matrice superiore di inerzia nella matrice di inerzia simmetrica
+
+-main:programma di partenza dove si specificanole incognite e i parametri fissi come DH e g;
+
+-param_id:la funzione riceve le incognite dal Main e ritorna i valori richiesti
+
+-regressore_classico_friction: calcola il regressore classico e i valori di PI. quelli s sono senza i valori nulli tau=Y*PI.
+
+- simplify_inertia: funzione che semplifica B. B2 è il vettore dei valori della matrice superiore, B3 è la matrice B semplificata
+
+-simplify_this_C: semplifica i valori di C(i,i)
+
+-tau_friction_classic:calcola il modello di attrito classico (coulomb+viscoso)
+
+- crea le funzioni per B, G e vettore di coriolis
+
+
+dati .mat:
+matrici.mat: contiene G2, B2, B3 e C2: necessario per saltare tutta la parte della creazione del modello.
+
